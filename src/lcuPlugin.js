@@ -40,4 +40,12 @@ export default class LCUPlugin {
   unsubscribeEvent(event) {
     delete this.eventSubscriptions[event];
   }
+
+  log(args) {
+    console.log(`[${this.constructor.name}]`, args);
+  }
+
+  error(args) {
+    console.error(`[${this.constructor.name}]`, args);
+  }
 }
