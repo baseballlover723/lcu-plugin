@@ -41,11 +41,11 @@ export default class LCUPlugin {
     delete this.eventSubscriptions[event];
   }
 
-  log(args) {
-    console.log(`[${this.constructor.name}]`, args);
+  log(...args) {
+    console.log(`[${this.constructor.name}]`, ...args);
   }
 
-  error(args) {
-    console.error(`[${this.constructor.name}]`, args);
+  error(...args) {
+    console.error(`[${this.constructor.name}]`, ...args);
   }
 }
