@@ -13,7 +13,6 @@
   "main": "src/lcuPlugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/lcuPlugin.js",
     "lint": "eslint \"**/*.js\""
   },
   "devDependencies": {
