@@ -1,6 +1,6 @@
-export default class LCUPlugin {
+export default class LcuPlugin {
   constructor() {
-    if (new.target === LCUPlugin) {
+    if (new.target === LcuPlugin) {
       throw new TypeError("Abstract class LCUPlugin can't be instantiated.");
     }
     this.eventSubscriptions = {};
