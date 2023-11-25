@@ -1,6 +1,6 @@
 {
   "name": "lcu-plugin",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "An abstract plugin class for interacting with the LCU",
   "type": "module",
   "repository": {

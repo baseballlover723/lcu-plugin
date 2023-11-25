@@ -34,7 +34,7 @@ export default class LcuPlugin {
   }
 
   subscribeEvent(event, handler) {
-    this.eventSubscriptions[event] = handler;
+    this.eventSubscriptions[event] = handler.bind(this);
   }
 
   unsubscribeEvent(event) {
