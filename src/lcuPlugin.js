@@ -48,4 +48,13 @@ export default class LcuPlugin {
   error(...args) {
     console.error(`[${this.constructor.name}]`, ...args);
   }
+
+  /**
+   * Sleeps for a given number of milliseconds. Usually awaited in an async context.
+   * @param ms
+   * @returns {Promise<void>}
+   */
+  async sleep(ms) {
+    await this.createPromise(resolve => setTimeout(resolve, ms));
+  }
 }
